@@ -1,0 +1,178 @@
+/* 🌟 General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+  width: 100vw;  /* Full width */
+  background-color: #f8f8f8;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* 🌞 Light Mode */
+.app-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 450px; /* Set max width to keep it centered */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 📌 Fact Box - Ensures Centering */
+.fact-box {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Prevents it from expanding */
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+}
+
+/* 🌚 Dark Mode */
+.dark-mode {
+  background-color: #222;
+  color: #ddd;
+}
+
+.dark-mode .app-container {
+  background: #2b2b2b;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .fact-box {
+  background: #3a3a3a;
+  color: white;
+}
+
+/* 🎨 Button Styling */
+.button-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows buttons to adjust */
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  outline: none;
+  width: 100%; /* Ensures all buttons are equal width */
+  max-width: 200px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* 🌚 Dark Mode - Buttons */
+.dark-mode button {
+  background-color: #444;
+  color: #ddd;
+}
+
+.dark-mode button:hover {
+  background-color: #666;
+}
+
+/* 🎯 Saved Facts Section */
+.saved-facts {
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 450px;
+  text-align: left;
+}
+
+.dark-mode .saved-facts {
+  background: #333;
+  color: white;
+}
+
+.saved-facts h3 {
+  margin-top: 0;
+}
+
+.saved-facts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.saved-facts li {
+  padding: 8px;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.dark-mode .saved-facts li {
+  background: #444;
+}
+
+/* 🎯 Smaller Delete (❌) Button */
+.delete-button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 4px 6px;  /* Reduced padding */
+  font-size: 12px;   /* Smaller text */
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px; /* Ensures spacing from text */
+}
+
+.delete-button:hover {
+  background: darkred;
+}
+
+/* 🌟 FactVerse Logo Styling */
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  color: #007bff; /* Main color */
+}
+
+/* Add a different color to "Verse" */
+.verse {
+  color: #ff6600; /* Accent color */
+}
+
+/* 🌚 Dark Mode - Adjust colors */
+.dark-mode .logo {
+  color: #00aaff;
+}
+
+.dark-mode .verse {
+  color: #ffaa00;
+}
