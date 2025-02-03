@@ -139,7 +139,7 @@ button:hover {
 
 /* 🎯 Smaller Delete (❌) Button */
 .delete-button {
-  background: red;
+  background: white;
   color: white;
   border: none;
   padding: 4px 6px;  /* Reduced padding */
